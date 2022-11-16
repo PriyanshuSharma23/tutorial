@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="status.js" type="module"></script>
+  <script src="script.js" type="module" defer></script>
+</head>
+
+<body class="bg-blue-500 min-h-screen flex justify-center items-center">
+  <form class="bg-white w-2/3 max-w-lg grid grid-cols-2 place-content-center mx-auto gap-2 p-4 rounded-md shadow-md">
+
+    <!-- heading -->
+    <h1 class="text-2xl font-bold col-span-2 pb-4">Basic Form</h1>
+
+    <!-- form group -->
+    <div class="col-span-2 flex flex-col md:col-span-1">
+      <label class="text-lg font-semibold text-gray-700/60" for="name">Name</label>
+      <input class="border rounded-md px-4 py-1" type="text" name="name" id="name" placeholder="Enter your name">
+    </div>
+
+    <!-- form group -->
+    <div class="col-span-2 flex flex-col md:col-span-1">
+      <label class="text-lg font-semibold text-gray-700/60" for="email">Email</label>
+      <input class="border rounded-md px-4 py-1" type="text" name="email" id="email" placeholder="Enter your email">
+    </div>
+
+    <!-- form group -->
+    <div class="col-span-2 flex flex-col">
+      <label class="text-lg font-semibold text-gray-700/60" for="password">Password</label>
+      <input class="border rounded-md px-4 py-1" type="password" name="password" id="password" placeholder="Enter your password">
+    </div>
+
+    <!-- submit button -->
+    <div class="pt-4 col-span-2 flex items-center space-x-4">
+      <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-full hover:brightness-105 active:scale-95">Submit</button>
+      <div data-status>Sample</div>
+    </div>
+  </form>
+</body>
+
+</html>
